@@ -92,5 +92,27 @@ Dataset diproses untuk memastikan kebersihan data sebelum digunakan dalam moodel
 
 ![image](https://github.com/user-attachments/assets/0fc5518e-5539-4781-a606-9747722dba7a)
 
+**PERFORMA MODEL**
+Performa Model yang digunakan adalah XGBoost. Evaluasi model dilakukan dengan menggunakan beberapa metrik, yaitu:
+ - Akurasi: 91%
+ - Precision: 88%
+ - Recall: 87%
+ - F1-Score: 97%
 
+   ---
+ Diskusi Hasil dan Kesimpulan
+# Diskusi Hasil:
+- Model XGBoost menunjukkan performa yang sangat baik, dengan akurasi sebesar 91%, yang menandakan kemampuan tinggi dalam mengklasifikasikan data secara benar.
+- Teknik Hyper-Parameter Tuning berhasil meningkatkan performa model melalui optimasi parameter.
+- Evaluasi menggunakan confusion matrix menunjukkan bahwa prediksi pada kelas minoritas sangat baik, dengan jumlah kesalahan prediksi yang rendah, berkat preprocessing data yang efektif.
+
+# Kesimpulan:
+- Proyek berhasil mencapai tujuan utamanya, yaitu memprediksi gangguan tidur (sleep disorder) berdasarkan gaya hidup dengan menggunakan model XGBoost.
+- Model ini dapat digunakan sebagai alat bantu diagnosis awal untuk mendeteksi risiko gangguan tidur.
+- Integrasi dengan Streamlit memungkinkan aksesibilitas yang mudah bagi pengguna akhir, seperti individu atau tenaga kesehatan.
+
+# Saran:
+- Untuk pengembangan lebih lanjut, disarankan menggunakan dataset yang lebih besar dan beragam guna meningkatkan generalisasi model.
+- Penambahan fitur-fitur tambahan, seperti data riwayat kesehatan keluarga atau informasi genetik, dapat meningkatkan akurasi dan keandalan prediksi.
+- Mengadopsi teknik ensembel lainnya atau menggabungkan model dengan metode explainable AI (XAI) dapat meningkatkan transparansi hasil prediksi.
 
