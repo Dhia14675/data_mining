@@ -4,13 +4,9 @@ from joblib import load
 import os
 
 
-try:
-    model = load("XGB_model.pkl")
-    label_encoders = load("label_encoders.pkl")
-except FileNotFoundError:
-    st.error("Model or encoder files not found. Please upload 'XGB_model.pkl' and 'label_encoders.pkl'.")
-    st.stop()
-    
+
+model = load("XGB_model.pkl")
+label_encoders = load("label_encoders.pkl")
 # Title
 st.title("Sleep Disorder Prediction")
 
