@@ -1,0 +1,12 @@
+Student Mental health.csv
+predictions.csv
+student_sleep_patterns.csv
+lgbm_model.pkl
+rf_model.pkl
+.venv/
+catboost+ELM+MLP_model.pkl
+'Prediksi_mental_health.ipynb'
+catboost_info/
+pipeline_model.pkl
+svm_model.pkl
+pipeline_model.csv
