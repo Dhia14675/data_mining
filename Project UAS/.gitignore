@@ -9,3 +9,4 @@ catboost+ELM+MLP_model.pkl
 catboost_info/
 pipeline_model.pkl
 svm_model.pkl
+pipeline_model.csv
