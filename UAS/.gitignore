@@ -10,3 +10,4 @@ catboost_info/
 pipeline_model.pkl
 svm_model.pkl
 pipeline_model.csv
+label_encoders.pkl
