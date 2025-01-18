@@ -3,14 +3,15 @@ import pandas as pd
 from joblib import load
 import os
 
-
-
-model = load("XGB_model.pkl")
-label_encoders = load("label_encoders.pkl")
 # Title
 st.title("Sleep Disorder Prediction")
 
 # Load the model and encoders
+try:
+    model = load("XGB_model.pkl")
+except FileNotFoundError:
+    st.error("The model file 'XGB_model.pkl' was not found. Please upload the file and restart the app.")
+    st.stop()
 
 
 # User input
