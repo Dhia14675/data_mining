@@ -3,16 +3,19 @@ import pandas as pd
 from joblib import load
 import os
 
-# Title
-st.title("Sleep Disorder Prediction")
 
-# Load the model and encoders
 try:
     model = load("XGB_model.pkl")
     label_encoders = load("label_encoders.pkl")
 except FileNotFoundError:
     st.error("Model or encoder files not found. Please upload 'XGB_model.pkl' and 'label_encoders.pkl'.")
     st.stop()
+    
+# Title
+st.title("Sleep Disorder Prediction")
+
+# Load the model and encoders
+
 
 # User input
 gender = st.selectbox("Gender", ["Male", "Female"])
