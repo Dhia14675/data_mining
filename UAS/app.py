@@ -8,7 +8,7 @@ st.title("Sleep Disorder Prediction")
 
 # Load the model and encoders
 try:
-    model = load('XGB_model.pkl')
+    model = load("/XGB_model.pkl")
 except FileNotFoundError:
     st.error("The model file 'XGB_model.pkl' was not found. Please upload the file and restart the app.")
     st.stop()
